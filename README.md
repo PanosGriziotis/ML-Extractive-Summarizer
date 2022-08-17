@@ -80,7 +80,7 @@ python model.py --test_file <newsroom_test_file>
 Model evaluation is done with r-squared measurement. System summaries are evaluated using 3 different types of rouge metrics (rouge-1, rouge-2, rouge-l)
 
 options:
-  --test_file   test data file path
+  --test_file \t  test data file path
   -m            saved model file path
   --num         number of text-summary pairs to include in test set  
   -l            number of sentences to include in each summary       
