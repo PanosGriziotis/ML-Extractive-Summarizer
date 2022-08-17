@@ -1,0 +1,10 @@
+*.txt
+*.gz
+*bz2
+*.pdf
+*.docx
+.idea/
+results/
+.vscode/
+test_folder/
+release/
