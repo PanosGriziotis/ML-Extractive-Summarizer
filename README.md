@@ -41,7 +41,7 @@ python summarizer.py -f <file_path> -o <output_file>
 ```bash
 python summarizer.py -dir <file_path>
 ```
-**Note**: It's not mandatory to train a new model. The summarizer uses by default a pre-trained model from 100 text-summary saved in *models* folder 
+**Note**: It's not mandatory to train a new model. The summarizer uses by default a pre-trained model from 100 text-summary pairs saved in */models* 
 
 Options for **summarizer.py**:
 
