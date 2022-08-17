@@ -41,12 +41,17 @@ python summarizer.py -f <file_path> -o <output_file>
 ```bash
 python summarizer.py -dir <file_path>
 ```
-*Note: If don't want to train a new model. Use the pre-trained model in [models/model.svr] trained in 100 text-summary pairs
+*Note*: If you don't want to train a new model. Use the pre-trained model in *models/model.svr* trained in 100 text-summary pairs
 
 Options:
-  -f          text file path
-  -dir        directory path of text files
-  -l          number of sentences to include in summary
+
+| Options     | Description |
+| :---        |    :----:   |
+|  -f         | text file path   
+
+- -f 
+- dir directory path of text files
+- -l number of sentences to include in summary
   -m          trained model path
   -o          file to write generated summary
 
