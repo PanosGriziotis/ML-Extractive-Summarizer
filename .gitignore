@@ -9,3 +9,4 @@ results/
 .vscode/
 test_folder/
 release/
+__pycache__
