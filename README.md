@@ -4,7 +4,11 @@ A feature-based summarization system using Support Vector Regression (SVR) techn
 
 ## Installation
 
-1) Download from github:
+1) Run:
+
+```bash
+pip install git+git://github.com/PanosGriziotis/ML-Extractive-Summarizer.git
+```
 
 2) install required packages:
 
@@ -37,6 +41,7 @@ python summarizer.py -f <file_path> -o <output_file>
 ```bash
 python summarizer.py -dir <file_path>
 ```
+*Note: If don't want to train a new model. Use the pre-trained model in [models/model.svr] trained in 100 text-summary pairs
 
 Options:
   -f          text file path
