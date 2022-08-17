@@ -13,7 +13,7 @@ pip install git+git://github.com/PanosGriziotis/ML-Extractive-Summarizer.git
 2) install required packages:
 
 ```bash
-pip install -r requirements
+pip install -r requirements.txt
 ```
 Make sure you have installed Python >=3.8
 
