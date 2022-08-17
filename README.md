@@ -7,7 +7,7 @@ A feature-based summarization system using Support Vector Regression (SVR) techn
 1) Run:
 
 ```bash
-pip install git+git://github.com/PanosGriziotis/ML-Extractive-Summarizer.git
+git clone https://github.com/PanosGriziotis/ML-Extractive-Summarizer.git
 ```
 
 2) install required packages:
