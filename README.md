@@ -19,7 +19,7 @@ Make sure you have installed Python >=3.8
 
 If you aim to train a new model or evaluate the system on test data, you must do the following:
 
-3) download the complete newsroom data as described in [here] (https://lil.nlp.cornell.edu/newsroom/download/index.html)
+3) download the complete newsroom data as described in [here](https://lil.nlp.cornell.edu/newsroom/download/index.html)
 
 2) After downloading, extract downloaded folder to get train, dev and test files:
 
@@ -29,7 +29,7 @@ tar xvf newsroom-release.tar
 
 ## Usage
 
-1) Get summary ([summarizer.py])
+1) Get summary
 
 - from  a singe txt file:
 
@@ -43,20 +43,17 @@ python summarizer.py -dir <file_path>
 ```
 *Note*: If you don't want to train a new model. Use the pre-trained model in *models/model.svr* trained in 100 text-summary pairs
 
-Options:
 
 | Options     | Description |
 | :---        |    :----:   |
-|  -f         | text file path   
-
-- -f 
-- dir directory path of text files
-- -l number of sentences to include in summary
-  -m          trained model path
-  -o          file to write generated summary
+|  -f         | text file path |
+|  -dir         | directory path of text files | 
+|  -l        | number of sentences to include in summary | 
+|  -m        | trained model path | 
+|  -o         | file to write generated summary | 
 
 
-2) Train a new model ([model.py])
+2) Train a new model 
 
 - using newsroom train data:
 
