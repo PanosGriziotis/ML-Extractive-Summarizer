@@ -29,7 +29,7 @@ tar xvf newsroom-release.tar
 
 ## Usage
 
-1) Get summary
+###  Get summary
 
 - from  a singe txt file:
 
@@ -41,8 +41,8 @@ python summarizer.py -f <file_path> -o <output_file>
 ```bash
 python summarizer.py -dir <file_path>
 ```
-*Note*: If you don't want to train a new model. Use the pre-trained model in *models/model.svr* trained in 100 text-summary pairs
 
+Options for **summarizer.py**:
 
 | Options     | Description |
 | :---        |    :----:   |
@@ -53,7 +53,7 @@ python summarizer.py -dir <file_path>
 |  -o         | file to write generated summary | 
 
 
-2) Train a new model 
+### Train a new model 
 
 - using newsroom train data:
 
@@ -65,14 +65,18 @@ python model.py --train_file <newsroom_train_file>
 ```bash
 python model.py --train_file <newsroom_train_file> --dev <newsroom_dev_file>
 ```
-options:
-  --train_file   train data file path
-  --dev          developement data file path
-  --num          number of text-summary pairs to include in train set
-  --split        proportion of dev data
-  -o             output folder directory to save trained model  
 
-3) Evaluate summarizer ([evaluation.py])
+Options for **model.py**:
+
+| Options     | Description |
+| :---        |    :----:   |
+|  --train_file         | train data file path |
+|  --dev         |  developement data file path | 
+|  --num         | number of text-summary pairs to include in train set | 
+|  --split       | proportion of dev data | 
+|  -o         | output folder directory to save trained model  | 
+
+### Evaluate summarizer 
 
 - using newsroom test data:
 
@@ -81,10 +85,12 @@ python model.py --test_file <newsroom_test_file>
 ```
 Model evaluation is done with r-squared measurement. System summaries are evaluated using 3 different types of rouge metrics (rouge-1, rouge-2, rouge-l)
 
-options:
-  --test_file \t  test data file path
-  -m            saved model file path
-  --num         number of text-summary pairs to include in test set  
-  -l            number of sentences to include in each summary       
-  --out         if flag is given, generated summaries are saved in   
-                files
+Options for **model.py**:
+
+| Options     | Description |
+| :---        |    :----:   |
+|  --test_file         | test data file path |
+|  -m         |   saved model file path| 
+|  --num         | number of text-summary pairs to include in test set | 
+|  -l        | number of sentences to include in each summary | 
+|  --out        | if flag is given, generated summaries are saved in files | 
