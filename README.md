@@ -21,7 +21,7 @@ If you aim to train a new model or evaluate the system on test data, you must do
 
 3) download the complete newsroom data as described in [here](https://lil.nlp.cornell.edu/newsroom/download/index.html)
 
-2) After downloading, extract downloaded folder to get train, dev and test files:
+2) After downloading, extract downloaded folder to get train, dev and test json.gz files:
 
 ```bash
 tar xvf newsroom-release.tar
@@ -41,7 +41,7 @@ python summarizer.py -f <file_path> -o <output_file>
 ```bash
 python summarizer.py -dir <file_path>
 ```
-**Note**: It's not mandatory to train a new model. The summarizer uses by default a pre-trained model from 100 text-summary pairs saved in */models* 
+**Note**: It's not necessary to train a new model. The summarizer uses by default a pre-trained model from 100 text-summary pairs saved in */models* directory 
 
 Options for **summarizer.py**:
 
