@@ -19,7 +19,7 @@ Make sure you have installed Python >=3.8
 
 If you aim to train a new model or evaluate the system on test data, you must do the following:
 
-3) download the complete newsroom data as described in [here](https://lil.nlp.cornell.edu/newsroom/download/index.html)
+3) download the complete newsroom dataset as described in [here](https://lil.nlp.cornell.edu/newsroom/download/index.html)
 
 2) After downloading, extract downloaded folder to get train, dev and test json.gz files:
 
