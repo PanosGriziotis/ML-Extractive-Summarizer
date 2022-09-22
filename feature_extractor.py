@@ -23,7 +23,7 @@ class FeatureExtractor():
     def get_feature_matrix (self):
         
         """
-        create a dataframe of shape (n, 3). The rows represent sentences and columns sentence related features
+        create a dataframe of shape (n, 3). The rows represent sentences and  the columns represent sentence related features
         """
         
         self.get_content_word_frequency ()
@@ -46,7 +46,6 @@ class FeatureExtractor():
     def get_content_word_frequency (self):
 
         """
-        compute content word frequency feature for each sentence:
         Find the average word probability (word occurencies / total number of words in text) of all content words in a sentence
         """
         
@@ -71,7 +70,6 @@ class FeatureExtractor():
     def get_entity_ratio (self):
 
         """
-        compute entity ratio feature for each sentence:
         find the ratio of name entities (eg. ORG, GPE) to the total number of words in a sentence
         """
 
@@ -89,7 +87,6 @@ class FeatureExtractor():
     def get_sentence_position_score (self):
         
         """
-        compute sentence position feature for each sentence:
         find the ratio of the position of a sentence in its document to the total number of sentences of the document
         """
 
@@ -101,7 +98,6 @@ class FeatureExtractor():
     def get_similarity_scores (self, summary_doc: str):
 
         """
-        compute similarity score for each sentence:
         Find the cosine similarity score between a sentence's and summary's word-count vectors.
         """
 
