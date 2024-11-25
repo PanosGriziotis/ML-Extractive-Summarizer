@@ -1,6 +1,6 @@
 # ML Extractive Summarizer
 
-A feature-based summarization system using Support Vector Regression (SVR) technique for sentence scoring. 
+A feature-based summarization system using Support Vector Regression (SVR)  for sentence scoring. 
 
 ## Installation
 
